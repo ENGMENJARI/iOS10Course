@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter Game 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoN-55-pdK">
+                                <rect key="frame" x="223" y="559" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gse-js-DQB">
+                                <rect key="frame" x="238" y="250" width="124" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="124" id="Qbp-P5-RI9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLp-4g-81T">
+                                <rect key="frame" x="357" y="301" width="33" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fLp-4g-81T" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1R2-LD-Pdz"/>
+                            <constraint firstItem="fLp-4g-81T" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="100" id="Muz-qL-AdR"/>
+                            <constraint firstItem="fLp-4g-81T" firstAttribute="leading" secondItem="Gse-js-DQB" secondAttribute="trailing" constant="-5" id="OqD-4z-eKb"/>
+                            <constraint firstItem="Gse-js-DQB" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Xha-3S-6Pv"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="aoN-55-pdK" secondAttribute="bottom" constant="20" id="aeJ-nm-Or8"/>
+                            <constraint firstItem="aoN-55-pdK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="d2q-ca-KuS"/>
+                            <constraint firstItem="Gse-js-DQB" firstAttribute="centerX" secondItem="aoN-55-pdK" secondAttribute="centerX" id="gKU-g9-cng"/>
+                            <constraint firstItem="Gse-js-DQB" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="230" id="iGA-Ou-NUf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testWebView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1vi-VO-OVs">
+                                <frame key="frameInset" width="600" height="556"/>
+                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gEZ-fw-rdA"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUC-Ky-8xd">
+                                <frame key="frameInset" minY="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="stop" id="6FO-iZ-Xh3">
+                                        <connections>
+                                            <action selector="stopLoading" destination="1vi-VO-OVs" id="8hz-Vz-bcs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="1v5-M5-gbj">
+                                        <connections>
+                                            <action selector="reload" destination="1vi-VO-OVs" id="jXW-3f-OaA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="glH-5I-ffh"/>
+                                    <barButtonItem systemItem="rewind" id="h7u-Qf-NP4">
+                                        <connections>
+                                            <action selector="goBack" destination="1vi-VO-OVs" id="hm1-fU-Je5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="1mC-Ql-1iY">
+                                        <connections>
+                                            <action selector="goForward" destination="1vi-VO-OVs" id="YI0-oQ-9eT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="s7t-QF-3Ar">
+                                <frame key="frameInset" minX="282" minY="281.5" width="37" height="37"/>
+                                <color key="color" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iUC-Ky-8xd" secondAttribute="trailing" id="0nX-dm-rr7"/>
+                            <constraint firstItem="s7t-QF-3Ar" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="74b-d2-1zT"/>
+                            <constraint firstAttribute="trailing" secondItem="1vi-VO-OVs" secondAttribute="trailing" id="XBx-5j-9Vh"/>
+                            <constraint firstAttribute="trailing" secondItem="1vi-VO-OVs" secondAttribute="trailing" id="dY0-cB-ONq"/>
+                            <constraint firstItem="1vi-VO-OVs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hZf-6d-jHw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1vi-VO-OVs" secondAttribute="bottom" constant="44" id="iNU-29-985"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iUC-Ky-8xd" secondAttribute="bottom" id="iPK-wk-mh2"/>
+                            <constraint firstItem="1vi-VO-OVs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kU0-oy-DHx"/>
+                            <constraint firstItem="iUC-Ky-8xd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qBe-GI-VIL"/>
+                            <constraint firstItem="s7t-QF-3Ar" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qtG-lM-tUR"/>
+                            <constraint firstItem="1vi-VO-OVs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="smD-dR-4RP"/>
+                            <constraint firstItem="iUC-Ky-8xd" firstAttribute="top" secondItem="1vi-VO-OVs" secondAttribute="bottom" id="uJ6-1C-TbI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activity" destination="s7t-QF-3Ar" id="7eg-hC-Nhq"/>
+                        <outlet property="myWebView" destination="1vi-VO-OVs" id="FSs-VW-Ug0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298" y="389"/>
+        </scene>
+    </scenes>
+</document>

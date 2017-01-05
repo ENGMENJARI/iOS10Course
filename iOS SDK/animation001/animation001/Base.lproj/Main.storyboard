@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="animation001" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="hKN-BS-NHT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="street" translatesAutoresizingMaskIntoConstraints="NO" id="FLx-fn-xfH">
+                                <rect key="frame" x="0.0" y="489" width="600" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="z1q-Rs-rfE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="b1" translatesAutoresizingMaskIntoConstraints="NO" id="YAN-hc-bCA">
+                                <rect key="frame" x="180" y="242" width="240" height="286"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="286" id="AYN-MM-D4b"/>
+                                    <constraint firstAttribute="width" constant="240" id="fht-Ya-rA5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="oTe-yW-dDL">
+                                <rect key="frame" x="226" y="508" width="148" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="edb-N7-MAB"/>
+                                    <constraint firstAttribute="height" constant="27" id="qPh-kN-hHp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hKN-BS-NHT" secondAttribute="trailing" id="0jD-nq-Ysk"/>
+                            <constraint firstAttribute="trailing" secondItem="FLx-fn-xfH" secondAttribute="trailing" id="9Xb-41-lUY"/>
+                            <constraint firstItem="hKN-BS-NHT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BYY-ld-1e4"/>
+                            <constraint firstItem="YAN-hc-bCA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q8d-Tc-qux"/>
+                            <constraint firstItem="FLx-fn-xfH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V51-TB-dI8"/>
+                            <constraint firstItem="oTe-yW-dDL" firstAttribute="top" secondItem="YAN-hc-bCA" secondAttribute="bottom" constant="-20" id="Wg1-Id-o6h"/>
+                            <constraint firstItem="oTe-yW-dDL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZvA-vk-rZi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FLx-fn-xfH" secondAttribute="bottom" id="ieg-kh-8hx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hKN-BS-NHT" secondAttribute="bottom" id="ikR-DQ-kDe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YAN-hc-bCA" secondAttribute="bottom" constant="72" id="kx6-Mg-WJB"/>
+                            <constraint firstItem="hKN-BS-NHT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nlk-37-zag"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="charImage" destination="YAN-hc-bCA" id="tVW-OH-i1B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="b1" width="182" height="317"/>
+        <image name="shadow" width="182" height="27"/>
+        <image name="sky" width="2179" height="1698"/>
+        <image name="street" width="1920" height="211"/>
+    </resources>
+</document>
